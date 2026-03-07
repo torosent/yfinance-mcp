@@ -1,0 +1,19 @@
+[project]
+name = "yfinance-mcp-server"
+version = "0.1.0"
+description = "YFinance MCP Server hosted on Azure Functions"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=2.10.2",
+    "mcp[cli]>=1.14.1",
+    "pandas>=2.3.0",
+    "python-dotenv>=1.1.1",
+    "yfinance>=0.2.64",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "pytest-asyncio>=1.3.0",
+]
